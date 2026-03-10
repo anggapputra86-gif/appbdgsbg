@@ -70,7 +70,7 @@ const UploadDeliverySchedule = ({ plant }) => {
             print_design: row['Print Design'],
             weight_pcs: row['Weight Pcs'],
             outstanding_qty: row['Outstanding Qty'],
-            schedule_date: scheduleDate,
+            schedule_date: parseDate(row.schedule_date),
             plant: plant,
             user_name: user?.email,
             delivery_status: 'SCHEDULED',
